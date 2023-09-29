@@ -1,0 +1,23 @@
+import java.util.*;  public class GuessingTheNumberGame {      
+public static void main(String[] args) {          
+random obj = new random();          
+
+int num = obj.nextint(25);          
+Scanner sc = new Scanner;          
+for (int i = 0; i < 5; i++) {            
+System.out.println("Guess a number(1-100) : ");            
+int Guessnum = sc.nextInt();            
+if (Guessnum == randnum) {                
+System.out.println("you won,well done!!");                
+break;            
+} else if (Guessnum < randnum) {                
+System.out.println("it is smaller,try with a bigger number");            
+} else if (Guessnum > randnum) {               
+System.out.println("it is bigger,try with a smaller number");            
+}        
+}        
+if (i == 5) {            
+System.out.println("you lost!!\ntry again");        
+}    
+}
+}
